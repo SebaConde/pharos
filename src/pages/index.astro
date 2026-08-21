@@ -1,17 +1,20 @@
 ---
 import Layout from "@/layouts/main.astro"
 import { Button } from "@/components/ui/button"
+import {
+  Card,
+  CardAction,
+  CardContent,
+  CardDescription,
+  CardFooter,
+  CardHeader,
+  CardTitle,
+} from "@/components/ui/card"
 ---
 
 <Layout>
-  <div class="flex min-h-svh p-6">
-    <div class="flex max-w-md min-w-0 flex-col gap-4 text-sm leading-loose">
-      <div>
-        <h1 class="font-medium">Project ready!</h1>
-        <p>You may now add components and start building.</p>
-        <p>We've already added the button component for you.</p>
-        <Button client:load className="mt-2">Button</Button>
-      </div>
-    </div>
+  <div class="flex flex-col items-center mt-30">
+    <img alt="logo" src="/public/imgs/pharosSoftware.jpg" width="800" height="800"/>
+    <h1 class="font-medium text-3xl text-blue-950">Sitio web de Pharos en desarrollo</h1>
   </div>
 </Layout>
